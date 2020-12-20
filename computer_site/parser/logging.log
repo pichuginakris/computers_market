@@ -1,0 +1,191 @@
+2388 - 2020-12-19 05:14:19,028 - ERROR - Exception of type SyntaxError in creating_bd(product, data): ОШИБКА:  ошибка синтаксиса (примерное положение: "computers")
+LINE 1: ...name char(20000), main_category integer) INHERITS computers(...
+                                                             ^
+
+16632 - 2020-12-19 05:14:45,349 - ERROR - Exception of type SyntaxError in creating_bd(product, data): ОШИБКА:  ошибка синтаксиса (примерное положение: "computers")
+LINE 1: ...name char(20000), main_category integer) INHERITS computers(...
+                                                             ^
+
+12296 - 2020-12-19 05:14:51,231 - ERROR - Exception of type SyntaxError in creating_bd(product, data): ОШИБКА:  ошибка синтаксиса (примерное положение: "computers")
+LINE 1: ...name char(20000), main_category integer) INHERITS computers;...
+                                                             ^
+
+17908 - 2020-12-19 23:59:29,720 - ERROR - Exception of type OperationalError in creating_main_category(nameMainCategory): 
+17908 - 2020-12-19 23:59:44,788 - ERROR - Exception of type OperationalError in creating_sub_category(nameMainCategory, nameSubCategory): 
+17908 - 2020-12-19 23:59:52,401 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:53,416 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:54,438 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:55,949 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:56,985 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:57,864 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-19 23:59:59,150 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:00,810 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:02,234 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:03,920 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:05,015 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:06,445 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:08,951 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:15,970 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:25,911 - ERROR - Exception of type OperationalError in creating_products(data): 
+17908 - 2020-12-20 00:00:31,781 - ERROR - Exception of type OperationalError in creating_products(data): 
+14644 - 2020-12-20 00:01:24,408 - ERROR - Exception of type OperationalError in creating_main_category(nameMainCategory): 
+1536 - 2020-12-20 00:01:40,568 - ERROR - Exception of type OperationalError in creating_main_category(nameMainCategory): 
+1536 - 2020-12-20 00:01:47,452 - ERROR - Exception of type OperationalError in creating_sub_category(nameMainCategory, nameSubCategory): 
+1536 - 2020-12-20 00:01:49,450 - ERROR - Exception of type OperationalError in creating_products(data): 
+3724 - 2020-12-20 00:03:11,264 - ERROR - Exception of type OperationalError in creating_main_category(nameMainCategory): 
+3724 - 2020-12-20 00:03:14,504 - ERROR - Exception of type OperationalError in creating_sub_category(nameMainCategory, nameSubCategory): 
+3724 - 2020-12-20 00:03:17,995 - ERROR - Exception of type OperationalError in creating_products(data): 
+3724 - 2020-12-20 00:03:18,497 - ERROR - Exception of type OperationalError in creating_products(data): 
+3724 - 2020-12-20 00:03:19,052 - ERROR - Exception of type OperationalError in creating_products(data): 
+20420 - 2020-12-20 00:03:33,296 - ERROR - Exception of type UndefinedColumn in creating_main_category(nameMainCategory): ОШИБКА:  столбец "namemaincategory" в таблице "models_maincategory" не существует
+LINE 1: INSERT INTO models_maincategory(nameMainCategory) values ('Н...
+                                        ^
+
+20108 - 2020-12-20 00:04:50,204 - ERROR - Exception of type UndefinedColumn in creating_main_category(nameMainCategory): ОШИБКА:  столбец "namemaincategory" в таблице "models_maincategory" не существует
+LINE 1: INSERT INTO models_maincategory(nameMainCategory) values ('Н...
+                                        ^
+
+17356 - 2020-12-20 00:05:13,050 - ERROR - Exception of type UndefinedColumn in creating_main_category(nameMainCategory): ОШИБКА:  столбец "namemaincategory" в таблице "models_maincategory" не существует
+LINE 1: INSERT INTO models_maincategory(nameMainCategory) values ('Н...
+                                        ^
+
+17356 - 2020-12-20 00:05:41,188 - ERROR - Exception of type UndefinedColumn in creating_sub_category(nameMainCategory, nameSubCategory): ОШИБКА:  столбец "namesubcategory" в таблице "models_subcategory" не существует
+LINE 1: INSERT INTO models_subcategory(nameSubCategory,nameMainCateg...
+                                       ^
+
+17356 - 2020-12-20 00:05:47,846 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:43,109 - ERROR - Exception of type UndefinedColumn in creating_main_category(nameMainCategory): ОШИБКА:  столбец "namemaincategory" в таблице "models_maincategory" не существует
+LINE 1: INSERT INTO models_maincategory(nameMainCategory) values ('Н...
+                                        ^
+
+15872 - 2020-12-20 00:07:51,829 - ERROR - Exception of type UndefinedColumn in creating_sub_category(nameMainCategory, nameSubCategory): ОШИБКА:  столбец "namesubcategory" в таблице "models_subcategory" не существует
+LINE 1: INSERT INTO models_subcategory(nameSubCategory,nameMainCateg...
+                                       ^
+
+15872 - 2020-12-20 00:07:54,496 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:55,023 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:55,690 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:56,216 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:57,691 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:58,342 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:07:59,024 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+15872 - 2020-12-20 00:08:00,016 - ERROR - Exception of type UndefinedColumn in creating_products(data): ОШИБКА:  столбец "namemaincategory" в таблице "models_product" не существует
+LINE 1: INSERT INTO models_product(product_name, nameMainCategory, n...
+                                                 ^
+
+13336 - 2020-12-20 00:08:28,464 - ERROR - Exception of type UndefinedColumn in creating_main_category(nameMainCategory): ОШИБКА:  столбец "namemaincategory" в таблице "models_maincategory" не существует
+LINE 1: INSERT INTO models_maincategory(id, nameMainCategory) values...
+                                            ^
+
+13336 - 2020-12-20 00:08:37,792 - ERROR - Exception of type UndefinedColumn in creating_sub_category(nameMainCategory, nameSubCategory): ОШИБКА:  столбец "namesubcategory" в таблице "models_subcategory" не существует
+LINE 1: INSERT INTO models_subcategory(nameSubCategory,nameMainCateg...
+                                       ^
+
+16108 - 2020-12-20 00:17:33,251 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...онная система Microsoft Windows 10 Professional.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:34,308 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...онная система Microsoft Windows 10 Professional.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:35,474 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ... операционная система Microsoft Windows 10 Home.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:37,305 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...лэптопе не предустановлена операционная система.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:39,761 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ... операционная система Microsoft Windows 10 Home.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:41,682 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...лэптопе не предустановлена операционная система.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:43,604 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...топе предустановлена операционная система Linux.','https://w...
+                                                             ^
+
+16108 - 2020-12-20 00:17:44,912 - ERROR - Exception of type SyntaxError in creating_products(data): ОШИБКА:  INSERT содержит больше выражений, чем целевых столбцов
+LINE 1: ...лэптопе не предустановлена операционная система.','https://w...
+                                                             ^
+
+4044 - 2020-12-20 00:24:20,242 - ERROR - Exception of type SyntaxError in delete_all_information(): ОШИБКА:  ошибка синтаксиса (примерное положение: "*")
+LINE 1: DELETE * FROM models_maincategory(id, name_main_category)
+               ^
+
+16956 - 2020-12-20 00:24:55,637 - ERROR - Exception of type SyntaxError in delete_all_information(): ОШИБКА:  ошибка синтаксиса (примерное положение: "(")
+LINE 1: DELETE FROM models_maincategory(id, name_main_category)
+                                       ^
+
+10792 - 2020-12-20 00:25:40,232 - ERROR - Exception of type SyntaxError in delete_all_information(): ОШИБКА:  ошибка синтаксиса (примерное положение: "(")
+LINE 1: DELETE FROM models_maincategory(name_main_category)
+                                       ^
+
+3184 - 2020-12-20 01:19:06,542 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:19:11,753 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:19:29,866 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:19:33,796 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:19:52,324 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:19:56,176 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:20:18,239 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:20:22,278 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:20:43,136 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:20:48,023 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:21:09,120 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:21:12,970 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:21:37,695 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:21:41,739 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:00,787 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:04,447 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:22,979 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:27,254 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:46,609 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
+3184 - 2020-12-20 01:22:50,411 - ERROR - Exception of type StringDataRightTruncation in creating_products(data): ОШИБКА:  значение не умещается в тип character varying(20000)
+
