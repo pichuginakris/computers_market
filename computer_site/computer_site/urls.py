@@ -21,6 +21,13 @@ urlpatterns = [
     path('', views.beginning),
     path('create_sub/', views.create_sub),
     path('create_sub/create_products/', views.create_products),
+    path('create_sub/create_products/products.csv/', views.download_csv),
+    path('create_sub/create_products/product_page_sorted_descending.html/', views.product_page_sorted_descending),
+    path('create_sub/create_products/product_page_sorted_ascending.html/', views.product_page_sorted_ascending),
+    path('create_sub/create_products/product_page_end_filter_15000.html/', views.product_page_end_filter_15000),
+    path('create_sub/create_products/product_page_end_filter_56000.html/', views.product_page_end_filter_56000),
+    path('create_sub/create_products/product_page_end_filter_55000.html/', views.product_page_end_filter_55000),
+
     path('admin/', admin.site.urls),
     path('api/', include('models.urls')),
 ]

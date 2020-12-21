@@ -90,13 +90,13 @@ def creating_products(data):
         conn.commit()
 
         try:
-            cursor.execute("INSERT INTO models_product(product_name, name_main_category, name_sub_category, price, "
+            cursor.execute("INSERT INTO models_product(product_name, name_main_category, name_sub_category, "
                            "article, picture_url, characteristic, "
-                           "description, goods_url) values ('" +
+                           "description, goods_url, price) values ('" +
                            str(data['product_name']).replace("'", "") + "','"  + str(data['nameMainCategory']).replace("'", "") + "','"
-                           + str(data['nameSubCategory']).replace("'", "") + "','" + str(data['price']).replace("'", "") + "','" + str(data['article']).replace("'", "") + "','"+
+                           + str(data['nameSubCategory']).replace("'", "") + "','" + str(data['article']).replace("'", "") + "','"+
                            str(data['picture_url']).replace("'", "") + "','" + str(data['characteristic']).replace("'", "") + "','" + str(data['description']).replace("'", "") + "','" +
-                           str(data['goods_url']).replace("'", "") + "');")
+                           str(data['goods_url']).replace("'", "") + "','" + (data['price']) + "');")
             conn.commit()
         except Exception as ex:
             logging.error(
