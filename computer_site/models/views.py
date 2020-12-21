@@ -37,9 +37,10 @@ class MainCategoryView(APIView):
         })
 
     @staticmethod
-    def delete(pk):
+    def delete(request, pk):
         # Get object with this pk
-        article = get_object_or_404(MainCategory.objects.all(), pk=pk)
+        data = request.data.get('name_main_category')
+        article = MainCategory.objects.get(pk=pk)
         article.delete()
         return Response({
             "message": "Main category with id `{}` has been deleted.".format(pk)
@@ -74,9 +75,11 @@ class SubCategoryView(APIView):
         })
 
     @staticmethod
-    def delete(pk):
+    def delete(request, pk):
         # Get object with this pk
-        article = get_object_or_404(SubCategory.objects.all(), pk=pk)
+        data = request.data.get('name_sub_category')
+        article = SubCategory.objects.get(pk=pk)
+
         article.delete()
         return Response({
             "message": "Sub category with id `{}` has been deleted.".format(pk)
