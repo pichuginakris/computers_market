@@ -1,0 +1,47 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+            <title>Computer Parts Finder</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+
+
+            <style>
+              /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+              body {background: #E5E5E5;}
+            </style>
+          <script>
+function Checkfirst(obj)
+{
+if (obj == 'true') { document.all.selectsub.disabled = true}
+else { document.all.selectsub.disabled = false};
+}
+function Checksecond(obj)
+{
+if (obj == 'true') { document.all.btn.disabled = true}
+else { document.all.btn.disabled = false};
+}
+</script>
+
+
+      <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
+          </head>
+
+          <body>
+
+    <form method="POST" action="create_products/" name = "f1">
+
+            <div id="e1_2">
+                 {% csrf_token %}
+                <span id="e1_7">Computer Parts Finder</span>
+                <span id="e1_8">source URLs: www.kns.ru, www.xpert.ru, computermarket.ru</span>
+                <span id="e1_9"> Вы выбрали категорию {{ selectmain }} </span>
+                <span id="e1_6">Выберите побочную категорию</span>
+                <select id="e17_2" name="selectsub" onchange="Checkfirst(this.value)">

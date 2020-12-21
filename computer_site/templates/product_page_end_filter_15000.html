@@ -1,0 +1,59 @@
+{% load static %}
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+
+            <title>Results</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+              <link rel="stylesheet" href="{% static 'styles_sub.css' %}" type="text/css" />
+            <style>
+              /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+              body {background: #E5E5E5;}
+            </style>
+<script language="JavaScript" type="text/javascript">
+<!--
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+-->
+</script>
+          </head>
+
+          <body>
+          <form method="POST" action="create_sub/" >
+            <div class="e5_2">
+                <a class="a" download ="products.csv" href="http://127.0.0.1:8000/create_sub/create_products/products.csv/">Скачать</a>
+                <div class="e5_4"></div>
+                <span class="e13_28">Результаты:</span>
+                <div class="e13_33"></div>
+                <select class="e13_34" name="filter" onchange="document.location=this.options[this.selectedIndex].value">
+                    <option value="none" hidden="">Фильтр</option>
+                     <option value="http://127.0.0.1:8000/create_sub/create_products/product_page_end_filter_15000.html/"  >До 15000 рублей</option>
+                    <option value="http://127.0.0.1:8000/create_sub/create_products/product_page_end_filter_55000.html/">От 15000 до 55000 рублей</option>
+                    <option value="http://127.0.0.1:8000/create_sub/create_products/product_page_end_filter_56000.html/">Более 55000 рублей</option>
+                </select>
+                <select class="e14_0" name="sort" onchange="document.location=this.options[this.selectedIndex].value">
+                    <option value="none2" hidden="">Сортировка</option>
+                    <option value="http://127.0.0.1:8000/create_sub/create_products/product_page_sorted_descending.html/" >По убыванию</option>
+                    <option  value="http://127.0.0.1:8000/create_sub/create_products/product_page_sorted_ascending.html/">По возрастанию</option>
+                </select>
+
+
+  </div>
+
+
+
+</div>
+<div class="border"></div>
+          </form>
+          </body></html>
