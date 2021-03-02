@@ -3,6 +3,10 @@ from rest_framework.generics import get_object_or_404
 from rest_framework.views import APIView
 from .models import MainCategory, SubCategory, Product
 from .serializers import MainCategorySerializer, SubCategorySerializer, ProductSerializer
+from django.http.response import JsonResponse
+from rest_framework.parsers import JSONParser
+from rest_framework import status
+from rest_framework.decorators import api_view
 
 
 class MainCategoryView(APIView):
@@ -33,9 +37,10 @@ class MainCategoryView(APIView):
         })
 
     @staticmethod
-    def delete(pk):
+    def delete(request, pk):
         # Get object with this pk
-        article = get_object_or_404(MainCategory.objects.all(), pk=pk)
+        data = request.data.get('name_main_category')
+        article = MainCategory.objects.get(pk=pk)
         article.delete()
         return Response({
             "message": "Main category with id `{}` has been deleted.".format(pk)
@@ -70,9 +75,11 @@ class SubCategoryView(APIView):
         })
 
     @staticmethod
-    def delete(pk):
+    def delete(request, pk):
         # Get object with this pk
-        article = get_object_or_404(SubCategory.objects.all(), pk=pk)
+        data = request.data.get('name_sub_category')
+        article = SubCategory.objects.get(pk=pk)
+
         article.delete()
         return Response({
             "message": "Sub category with id `{}` has been deleted.".format(pk)
@@ -107,10 +114,14 @@ class ProductView(APIView):
         })
 
     @staticmethod
-    def delete(pk):
+    def delete(request, pk):
         # Get object with this pk
-        article = get_object_or_404(Product.objects.all(), pk=pk)
+        data = request.data.get('product_name')
+        print(pk)
+        article=Product.objects.get(pk=pk)
+
         article.delete()
         return Response({
             "message": "Product with id `{}` has been deleted.".format(pk)
         }, status=204)
+

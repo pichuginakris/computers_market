@@ -1,15 +1,14 @@
 {% load static %}
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            
+          <head>
+            <meta charset="utf-8">
           
-            <title>Computer Parts Finder</title>
+            <title>Results</title>
             <meta name="description" content="Figma htmlGenerator">
             <meta name="author" content="htmlGenerator">
-            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-
+              <link rel="stylesheet" href="{% static 'styles_sub.css' %}" type="text/css" />
             <style>
               /*
                 Figma Background for illustrative/preview purposes only.
@@ -17,47 +16,40 @@
               */
               body {background: #E5E5E5;}
             </style>
-          <script>
-function Checkfirst(obj)
-{
-if (obj == 'true') { document.all.selectsub.disabled = true}
-else { document.all.selectsub.disabled = false};
-}
-function Checksecond(obj)
-{
-if (obj == 'true') { document.all.btn.disabled = true}
-else { document.all.btn.disabled = false};
-}
-</script>
-
-
-      <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css" />
+          
           </head>
           
           <body>
-
-    <form name="f1">
-
-            <div id="e1_2">
-                <span id="e1_7">Computer Parts Finder</span>
-                <span id="e1_8">source URLs: www.kns.ru, www.xpert.ru, computermarket.ru</span>
-                <span id="e1_6">Выберите основную категорию</span>
-                <select id="e17_2" name="selectmain" onchange="Checkfirst(this.value)">
-
+          <form method="POST" action="create_sub/" >
+            <div class="e5_2">
+                <a class="a" download ="products.csv" href="http://127.0.0.1:8000/create_sub/create_products/products.csv/">Скачать</a>
+                <div class="e5_4"></div>
+                <span class="e13_28">Результаты:</span>
+                <div class="e13_33"></div>
+                <select class="e13_34" name="filter">
+                    <option value="none" hidden="">Фильтр</option>
+                     <option value="filter1"  >До 15000 рублей</option>
+                    <option value="filter2">От 15000 до 55000 рублей</option>
+                    <option value="filter4">Более 55000 рублей</option>
+                </select>
+                <select class="e14_0" name="sort">
+                    <option value="none2" hidden="">Сортировка</option>
+                    <option value="sort1" >По убыванию</option>
+                    <option value="sort2">По возрастанию</option>
                 </select>
 
-                <span id="e2_2">Выберите подкатегорию</span>
-                <select id="e2_3" name="selectsub" onchange="Checksecond(this.value)" disabled="">
-                     <option >Выберите побочную категорию</option>
-                    <option>Пункт 1</option>
-                    <option>Пункт 2</option>
-                </select>
-                <button id="e2_5" name="btn" disabled="">Начать поиск</button>
-                <span id="e2_8">For ТРКПО5</span>
-                <div id="e18_5"></div>
-                <div id="e18_4"></div>
-            </div>
+  </div>
 
-          
-    </form>
-</body></html>
+            <div class="new_div">
+                <img  class="image" src="https://cdn.kns.ru/linkpics/acer-extensa-15-ex215-22-r21j-0-v1.jpg">
+                <span class="name">Наименование</span>
+                 <div class="article">Артикул</div>
+                <div class="description">Описание</div>
+                <a class="space"></a>
+                <div class="charact">Характеристики</div>
+                <div class="url">URL</div>
+                <div class="price">Цена</div>
+</div>
+<div class="border"></div>
+          </form>
+          </body></html>
