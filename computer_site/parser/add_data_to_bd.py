@@ -28,6 +28,7 @@ def delete_all_information():
             'Exception of type {!s} in delete_all_information(): {!s}'.format(type(ex).__name__,
                                                                                               str(ex)))
 
+
 def creating_main_category(nameMainCategory):
     logging.basicConfig(filename='logging.log', filemode='a',
                         format='%(process)s - %(asctime)s - %(levelname)s - %(message)s')

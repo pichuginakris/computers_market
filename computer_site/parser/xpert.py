@@ -12,44 +12,52 @@ def find_product_data(main_category_name, reference):
         product_name = soup.find('td', class_='productName').text
         print(product_name)
     except:
-        product_name = ''
+        product_name = 'Отсутствует'
     try:
         description = soup.find('div', id_='tabDesc')
         print(description)
     except:
-        description = ''
+        description = 'Отсутствует'
     try:
         image = 'https://www.xpert.ru' + str((soup.find('table', class_='result').find_all('table'))[1].find('img').get('src'))
-        print(image)
     except:
-        image = ''
+        image = 'Отсутствует'
     try:
         price = (soup.find('table', class_='result').find_all('table'))[1].find('span').text
         print(price)
     except:
-        price = ''
-    article = (soup.find('table', class_='box').find_all('tr'))[1].text.strip()
+        price = 0
+    try:
+        article = ((soup.find('table', class_='box').find_all('tr'))[1].text.strip()).split()[0]
+    except:
+        atricle = 'Отсутствует'
     print(article)
-    data = {
-        'product_name': product_name.strip(),
-        'nameMainCategory': 'XPERT',
-        'nameSubCategory': main_category_name.strip(),
-        'price': price.strip(),
-        'article': article.strip(),
-        'picture_url': image.strip(),
-        'characteristic': '',
-        'description': description.strip(),
-        'goods_url': reference.strip()
-    }
+    print('POP')
+    try:
+        data = {
+            'product_name': product_name,
+            'nameMainCategory': 'XPERT',
+            'nameSubCategory': main_category_name,
+            'price': price,
+            'article': article,
+            'picture_url': image,
+            'characteristic': '',
+            'description': description,
+            'goods_url': reference
+        }
+    except:
+        print('error')
+    print(data)
     creating_products(data)
 
 
 def find_all_products(main_category_name, main_category_href):
     pattern = main_category_href + '&page={}'
     p = 1
-    while p<10:
+    while p<3:
         try:
             main_category_href = pattern.format(p)
+            print(main_category_href)
             response = requests.get(main_category_href)
             html = response.text
             soup = BeautifulSoup(html, 'lxml')
@@ -83,9 +91,8 @@ def find_main_category():
             main_category = category_html.get('href')
             main_category_href = 'https://www.xpert.ru/' + main_category
             main_category_name = category_html.text
-            creating_sub_category(main_category_name, 'XPERT')
-            with open('xpert_data.txt', 'a', encoding='utf8', newline='') as file:
-                file.writelines(str(main_category_name) + '\n')
+            if main_category_name != 'Все товары':
+                creating_sub_category(main_category_name, 'XPERT')
             find_all_products(main_category_name, main_category_href)
 
 

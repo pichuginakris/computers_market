@@ -5,8 +5,8 @@ import csv
 def write_csv_header():  # обновляет файл, добавляя в него заголовки
     with open('templates/products.csv', 'w', encoding='utf8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(('Имя',  'Главная категория', 'Побочная категория', 'Цена', 'Артикул', 'Ссылка на картинку',
-                         'Характеристика', 'Описание', 'Ссылка на товар'))
+        writer.writerow(('Имя',  'Главная категория', 'Побочная категория', 'Артикул', 'Ссылка на картинку',
+                         'Характеристика', 'Описание', 'Ссылка на товар', 'Цена'))
 
 
 def write_csv(data):  # записывает данные в файл csv
@@ -22,10 +22,8 @@ def product_page_creating(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
     cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "')")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
@@ -56,10 +54,8 @@ def product_page_sorted_descending_creating(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
     cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "') ORDER BY price DESC")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
@@ -89,10 +85,8 @@ def product_page_sorted_ascending_creating(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
     cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "') ORDER BY price ASC")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
@@ -122,10 +116,8 @@ def product_page_filter_56000(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
     cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "') and (price>55000)ORDER BY price ASC")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
@@ -155,10 +147,8 @@ def product_page_filter_15000(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
     cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "') and (price<15000)ORDER BY price ASC")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
@@ -188,10 +178,8 @@ def product_page_filter_55000(sub_category_name):
     conn = psycopg2.connect(connect_str)
     cursor = conn.cursor()
     conn.commit()
-    print(str(sub_category_name))
-    cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "')and  (price<55001)ORDER BY price ASC")
+    cursor.execute("SELECT * FROM models_product WHERE (name_sub_category ='" + sub_category_name + "')and  (price>15000) and (price<55001)ORDER BY price ASC")
     rows = cursor.fetchall()
-    print(rows)
 
     carcas = open('templates/product_page_beginning.html', 'r', encoding='utf8', newline='')
     end = open('templates/product_page_end.html', 'r', encoding='utf8', newline='')
