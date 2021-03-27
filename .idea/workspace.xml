@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b7a3149-1f08-4640-870b-b8b0fb4c35a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/computer_site/computer_site/tests/test_serializer.py" afterDir="false" />
+    <list default="true" id="2b7a3149-1f08-4640-870b-b8b0fb4c35a3" name="Default Changelist" comment="Added test files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/computer_site/tests/test_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/computer_site/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/create_product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/create_product_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/models/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/parser/add_data_to_bd.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/parser/add_data_to_bd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/parser/xpert.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/parser/xpert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/computer_sites/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/models/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/models/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/models/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/main_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_15000.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_15000.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_55000.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_55000.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_56000.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_56000.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_ascending.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_ascending.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_descending.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_descending.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/templates/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/products.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/sub_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/sub_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/tests/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/tests/test_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +70,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\unik_api\computer_site\models" />
-      <recent name="D:\unik_api" />
       <recent name="D:\unik_api\computer_site" />
       <recent name="D:\unik_api\computer_site\computer_site" />
+      <recent name="D:\unik_api\computer_site\models" />
+      <recent name="D:\unik_api" />
       <recent name="D:\unik_api\computer_site\static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -219,7 +229,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608520806647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added test files">
+      <created>1614808180903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614808180903</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added test files">
+      <created>1614808211229</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614808211229</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added test files">
+      <created>1614808290821</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614808290821</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,21 +294,18 @@
     <MESSAGE value="Adding api and a bit of html" />
     <MESSAGE value="Adding product_page and fixes" />
     <MESSAGE value="Fixed api methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed api methods" />
+    <MESSAGE value="Added test files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Notifications" timestamp="1606699981537">
+    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616808029285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="70" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1606699981537" />
-    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608345295310">
+    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1616808029285" />
+    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1616808961357">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608345295310" />
-    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1614808210422">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1614808210422" />
+    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616808961357" />
     <state width="1291" height="211" key="GridCell.Tab.0.bottom" timestamp="1614619633686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -302,14 +330,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1614808144909" />
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1614808216064">
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1614808292624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614808216064" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1614632571206">
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614808292624" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1616805502954">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1614632571206" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1616805502954" />
     <state x="404" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608493758424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

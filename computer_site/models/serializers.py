@@ -3,7 +3,7 @@ from .models import MainCategory, SubCategory, Product
 
 
 class MainCategorySerializer(serializers.Serializer):
-    name_main_category = serializers.CharField(max_length=20000)
+    name_main_category = serializers.CharField(max_length=2000)
 
     def update(self, instance, validated_data):
         instance.name_main_category = validated_data.get('name_main_category', instance.title)
@@ -15,8 +15,8 @@ class MainCategorySerializer(serializers.Serializer):
 
 
 class SubCategorySerializer(serializers.Serializer):
-    name_sub_category = serializers.CharField(max_length=20000)
-    name_main_category = serializers.CharField(max_length=20000)
+    name_sub_category = serializers.CharField(max_length=2000)
+    name_main_category = serializers.CharField(max_length=2000)
 
     def update(self, instance, validated_data):
         instance.name_sub_category = validated_data.get('name_sub_category', instance.title)
