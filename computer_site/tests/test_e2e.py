@@ -1,6 +1,6 @@
-import math
 import os
 import time
+import pandas as pd
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
@@ -126,6 +126,7 @@ def test_UI_Use_Big_Filter():
 
 
 def test_UI_csv_Download():
+    name = "test_csv"
     try:
         prefs = {}
         prefs["profile.default_content_settings.popups"] = 0
@@ -149,11 +150,16 @@ def test_UI_csv_Download():
         downBtn.click()
         time.sleep(5)
         assert os.path.exists(os.getcwd() + '\\' + name)
-        os.remove(os.getcwd() + '\\' + name)
+
+        df_test = pd.read_csv("products_test.csv", delimiter=',', encoding="utf8")
+        df_down = pd.read_csv(name, delimiter=',', encoding="utf8")
+        assert df_down.equals(df_test), "Not equals .csv"
     except Exception as e:
         print(e)
         assert False, "test_UI_csv_Download failed"
     finally:
+        if os.path.exists(os.getcwd() + '\\' + name):
+            os.remove(os.getcwd() + '\\' + name)
         browser.close()
         time.sleep(2)
         browser.quit()
