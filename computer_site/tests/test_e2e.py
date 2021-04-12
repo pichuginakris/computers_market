@@ -1,11 +1,10 @@
-import math
 import os
 import time
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
-
+import pandas as pd
 link = "http://127.0.0.1:8000/"
 
 
@@ -29,7 +28,7 @@ def test_UI_Find_Lowest_Cost():
         assert int(list_elems[0].find_element_by_class_name("price").text.split(" ")[1]) <= \
                int(list_elems[1].find_element_by_class_name("price").text.split(" ")[1])
 
-        url = list_elems[0].find_element_by_class_name("url").text
+        url = list_elems[0].find_element_by_class_name("url").text.split(" ")[1]
     except Exception as e:
         print(e)
         assert False, "test_UI_Find_Lowest_Cost failed"
@@ -58,7 +57,7 @@ def test_UI_Find_Highest_Cost():
         list_elems = browser.find_elements(By.CLASS_NAME, "new_div")
         assert int(list_elems[0].find_element_by_class_name("price").text.split(" ")[1]) >= \
                int(list_elems[1].find_element_by_class_name("price").text.split(" ")[1])
-        url = list_elems[0].find_element_by_class_name("url").text
+        url = list_elems[0].find_element_by_class_name("url").text.split(" ")[1]
     except Exception as e:
         print(e)
         assert False, "test_UI_Find_Highest_Cost failed"
@@ -149,20 +148,25 @@ def test_UI_csv_Download():
         downBtn.click()
         time.sleep(5)
         assert os.path.exists(os.getcwd() + '\\' + name)
-        os.remove(os.getcwd() + '\\' + name)
+
+        df_test = pd.read_csv("products_test.csv", delimiter=',', encoding="utf8")
+        df_down = pd.read_csv(name, delimiter=',', encoding="utf8")
+        assert df_down.equals(df_test), "Not equals .csv"
     except Exception as e:
         print(e)
         assert False, "test_UI_csv_Download failed"
     finally:
+        if os.path.exists(os.getcwd() + '\\' + name):
+            os.remove(os.getcwd() + '\\' + name)
         browser.close()
         time.sleep(2)
         browser.quit()
 
 
 if __name__ == '__main__':
-    test_UI_Find_Lowest_Cost()
-    test_UI_Find_Highest_Cost()
+    #test_UI_Find_Lowest_Cost()
+    #test_UI_Find_Highest_Cost()
     #test_UI_Use_Low_Filter()
-    test_UI_Use_Middle_Filter()
-    test_UI_Use_Big_Filter()
+    #test_UI_Use_Middle_Filter()
+    #test_UI_Use_Big_Filter()
     test_UI_csv_Download()
