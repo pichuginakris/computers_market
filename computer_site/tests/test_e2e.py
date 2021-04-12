@@ -164,9 +164,9 @@ def test_UI_csv_Download():
 
 
 if __name__ == '__main__':
-    #test_UI_Find_Lowest_Cost()
-    #test_UI_Find_Highest_Cost()
+    test_UI_Find_Lowest_Cost()
+    test_UI_Find_Highest_Cost()
     #test_UI_Use_Low_Filter()
-    #test_UI_Use_Middle_Filter()
-    #test_UI_Use_Big_Filter()
+    test_UI_Use_Middle_Filter()
+    test_UI_Use_Big_Filter()
     test_UI_csv_Download()
