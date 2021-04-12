@@ -5,7 +5,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
-
+import pandas as pd
 link = "http://127.0.0.1:8000/"
 
 
@@ -29,7 +29,7 @@ def test_UI_Find_Lowest_Cost():
         assert int(list_elems[0].find_element_by_class_name("price").text.split(" ")[1]) <= \
                int(list_elems[1].find_element_by_class_name("price").text.split(" ")[1])
 
-        url = list_elems[0].find_element_by_class_name("url").text
+        url = list_elems[0].find_element_by_class_name("url").text.split(" ")[1]
     except Exception as e:
         print(e)
         assert False, "test_UI_Find_Lowest_Cost failed"
@@ -58,7 +58,7 @@ def test_UI_Find_Highest_Cost():
         list_elems = browser.find_elements(By.CLASS_NAME, "new_div")
         assert int(list_elems[0].find_element_by_class_name("price").text.split(" ")[1]) >= \
                int(list_elems[1].find_element_by_class_name("price").text.split(" ")[1])
-        url = list_elems[0].find_element_by_class_name("url").text
+        url = list_elems[0].find_element_by_class_name("url").text.split(" ")[1]
     except Exception as e:
         print(e)
         assert False, "test_UI_Find_Highest_Cost failed"
