@@ -7,6 +7,7 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 from rest_framework.decorators import api_view
+from django.http import Http404
 
 
 class MainCategoryView(APIView):
@@ -16,6 +17,7 @@ class MainCategoryView(APIView):
         serializer = MainCategorySerializer(articles, many=True)
         return Response({"Main category": serializer.data})
 
+
     @staticmethod
     def post(request):
         # Create an article from the above data
@@ -23,6 +25,26 @@ class MainCategoryView(APIView):
         if serializer.is_valid(raise_exception=True):
             article_saved = serializer.save()
         return Response({"success": "Main category '{}' created successfully".format(article_saved.title)})
+
+
+class MainCategoryView_v2(APIView):
+    @staticmethod
+    def get(request, pk):
+        try:
+            puppy = MainCategory.objects.get(pk=pk)
+            serializer = MainCategorySerializer(puppy)
+            return Response(serializer.data)
+        except MainCategory.DoesNotExist:
+            raise Http404("MainCategory does not exist")
+
+    @staticmethod
+    def delete(request, pk):
+        try:
+            puppy = MainCategory.objects.get(pk=pk)
+            puppy.delete()
+            return Response({"Main category with pk " + str(pk) + " deleted"})
+        except MainCategory.DoesNotExist:
+            raise Http404("MainCategory does not exist")
 
 
 class SubCategoryView(APIView):
@@ -39,6 +61,48 @@ class SubCategoryView(APIView):
         if serializer.is_valid(raise_exception=True):
             article_saved = serializer.save()
         return Response({"success": "Sub category '{}' created successfully".format(article_saved.title)})
+
+
+class SubCategoryView_v2(APIView):
+    @staticmethod
+    def get(request, pk):
+        try:
+            puppy = SubCategory.objects.get(pk=pk)
+            serializer = SubCategorySerializer(puppy)
+            return Response(serializer.data)
+        except SubCategory.DoesNotExist:
+            raise Http404("Sub category does not exist")
+
+    @staticmethod
+    def delete(request, pk):
+        try:
+            puppy = SubCategory.objects.get(pk=pk)
+            puppy.delete()
+            return Response({"Sub category with pk " + str(pk) + " deleted"})
+        except SubCategory.DoesNotExist:
+            raise Http404("SubCategory does not exist")
+
+
+
+class ProductView_v2(APIView):
+    @staticmethod
+    def get(request, pk):
+        try:
+            puppy = Product.objects.get(pk=pk)
+            serializer = ProductSerializer(puppy)
+            return Response(serializer.data)
+        except Product.DoesNotExist:
+            raise Http404("Product does not exist")
+
+
+    @staticmethod
+    def delete(request, pk):
+        try:
+            puppy = Product.objects.get(pk=pk)
+            puppy.delete()
+            return Response({"Product with pk " + str(pk) + " deleted"})
+        except Product.DoesNotExist:
+            raise Http404("Product does not exist")
 
 
 class ProductView(APIView):

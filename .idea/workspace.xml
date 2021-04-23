@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7a3149-1f08-4640-870b-b8b0fb4c35a3" name="Default Changelist" comment="Added test files">
+      <change afterPath="$PROJECT_DIR$/computer_site/parser/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/tests/test_view.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_site/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/computer_sites/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/models/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/models/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/models/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/models/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/my_site/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/my_site/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/add_data_to_bd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/cm_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/computermarket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/creating_tables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/kns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/kns_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/kns_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/logging.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/xpert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/parser/xpert_data.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/main_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_15000.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_15000.html" afterDir="false" />
@@ -26,8 +25,10 @@
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_56000.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_end_filter_56000.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_ascending.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_ascending.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_descending.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/product_page_sorted_descending.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/templates/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/products.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/templates/sub_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/templates/sub_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/computer_site/tests/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/tests/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_e2e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computer_site/tests/test_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/computer_site/tests/test_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/computer_site/tests/test_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,33 +82,89 @@
       <recent name="D:\стажировка\уроки по парсингу\unik_api\computer_site\parser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_view.ViewsTestCase.test_index_loads_properly">
-    <configuration name="Unittests for models.tests.MainCategoryTestCase.test_animals_can_speak" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.м">
+    <configuration name="м" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="unik_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;models.tests.MainCategoryTestCase.test_animals_can_speak&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer_site/м.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_view.ViewsTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="computermarket" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="unik_api" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/pars" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_view.ViewsTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer_site/pars/computermarket.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kns" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="unik_api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/pars" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer_site/pars/kns.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xpert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="unik_api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/pars" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/computer_site/pars/xpert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_view.ViewsTestCase.test_index_loads_properly" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -124,41 +181,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for tests.CreationTestCase.test_creation_page_get" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="unik_api" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.CreationTestCase.test_creation_page_get&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in D:/unik_api/computer_site/models/tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="unik_api" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/computer_site/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/computer_site/models/tests.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.м" />
+        <item itemvalue="Python.computermarket" />
+        <item itemvalue="Python.kns" />
+        <item itemvalue="Python.xpert" />
         <item itemvalue="Python tests.Unittests for test_view.ViewsTestCase.test_index_loads_properly" />
-        <item itemvalue="Python tests.Unittests for test_view.ViewsTestCase" />
-        <item itemvalue="Python tests.Unittests for models.tests.MainCategoryTestCase.test_animals_can_speak" />
-        <item itemvalue="Python tests.Unittests in D:/unik_api/computer_site/models/tests.py" />
-        <item itemvalue="Python tests.Unittests for tests.CreationTestCase.test_creation_page_get" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614808290821</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added test files">
+      <created>1616813940621</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616813940621</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,8 +324,24 @@
         <option value="1" />
       </set>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/e2e-tests" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Adding bd info" />
     <MESSAGE value="Adding api and a bit of html" />
     <MESSAGE value="Adding product_page and fixes" />
@@ -302,26 +354,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1616808029285" />
-    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1616808961357">
+    <state x="424" y="6" key="CommitChangelistDialog2" timestamp="1619221503740">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616808961357" />
-    <state width="1291" height="211" key="GridCell.Tab.0.bottom" timestamp="1614619633686">
+    <state x="424" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619221503740" />
+    <state x="147" y="64" width="1228" height="688" key="DiffContextDialog" timestamp="1618104327275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1291" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614619633686" />
-    <state width="1291" height="211" key="GridCell.Tab.0.center" timestamp="1614619633686">
+    <state x="147" y="64" width="1228" height="688" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1618104327275" />
+    <state width="1284" height="211" key="GridCell.Tab.0.bottom" timestamp="1618314199838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1291" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614619633686" />
-    <state width="1291" height="211" key="GridCell.Tab.0.left" timestamp="1614619633686">
+    <state width="1284" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618314199838" />
+    <state width="1284" height="211" key="GridCell.Tab.0.center" timestamp="1618314199837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1291" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614619633686" />
-    <state width="1291" height="211" key="GridCell.Tab.0.right" timestamp="1614619633686">
+    <state width="1284" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618314199837" />
+    <state width="1284" height="211" key="GridCell.Tab.0.left" timestamp="1618314199837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1291" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614619633686" />
+    <state width="1284" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618314199837" />
+    <state width="1284" height="211" key="GridCell.Tab.0.right" timestamp="1618314199838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1284" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618314199838" />
     <state x="147" y="65" key="MergeDialog" timestamp="1614808144904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -330,25 +386,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1614808144909" />
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1614808292624">
+    <state x="618" y="327" key="VCS.ChangelistChooser" timestamp="1618098521647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614808292624" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1616805502954">
+    <state x="618" y="327" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1618098521647" />
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1616813957008">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1616805502954" />
-    <state x="404" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608493758424">
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616813957008" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1618331552371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="404" y="27" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1608493758424" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614808117319">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618331552371" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619221468825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1614808117319" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608344525155">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608344525155" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1619221468825" />
   </component>
 </project>
